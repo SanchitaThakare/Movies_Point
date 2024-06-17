@@ -126,3 +126,59 @@ a, a.small {
 }
 
 
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+    .container {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .navbar .nav-link {
+        padding: .5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .navbar {
+        flex-direction: column;
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+    .navbar .hamburger, .navbar .menu-close {
+        display: block;
+    }
+    .navbar .menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+    .navbar .menu.show {
+        display: flex;
+    }
+    .navbar .nav-link {
+        width: 100%;
+        padding: .5rem 1rem;
+        text-align: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar {
+        padding-top: 4px;
+        padding-bottom: 4px;
+    }
+    .navbar .nav-link {
+        padding: .5rem 0.5rem;
+    }
+}

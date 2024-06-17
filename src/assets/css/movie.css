@@ -196,7 +196,6 @@ a {
 }
 
 .image {
-    /* background-image: url(/_nuxt/img/placeholder.6f1bf43.png); */
     -webkit-background-size: cover;
     background-size: cover;
     background-position: 50%;
@@ -731,4 +730,38 @@ body {
     height: 100%;
     -o-object-fit: cover;
     object-fit: cover;
+}
+
+
+
+@media (max-width: 768px) {
+    /* Media query for screens smaller than or equal to 768px */
+
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .navbar {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+   
+}
+
+@media (max-width: 480px) {
+    
+
+    .container {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .navbar {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    
 }
